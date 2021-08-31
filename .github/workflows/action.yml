@@ -4,8 +4,8 @@ on:
     branches: main
   workflow_dispatch:
 
-  schedule:
-    - cron: "44 16 * * *"
+  schedule: # 触发机制为定时任务
+    - cron: "44 16 * * *" # 每天16:44分自动执行
 jobs:
   autosend:
     runs-on: ubuntu-latest
