@@ -7,6 +7,7 @@ on:
   schedule: # 触发机制为定时任务
     - cron: "44 16 * * *" # 每天16:44分自动执行
     - cron: "45 17 * * *" # 每天17:45分自动执行
+    - cron: "11 18 * * *" # 每天18:11分自动执行
 jobs:
   autosend:
     runs-on: ubuntu-latest
